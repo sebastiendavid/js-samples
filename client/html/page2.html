@@ -1,0 +1,16 @@
+<div>
+    <script type="text/x-handlebars-template" id="template-page2">
+        <div class="row"><div class="large-12 columns">
+            <h1>PAGE 2</h1>
+            <ul class="large-block-grid-3">
+                {{#each articles}}
+                <li><h3>{{this.label}}</h3><span>{{this.content}}</span></li>
+                {{/each}}
+            </ul>
+        </div></div>
+    </script>
+
+    <script type="text/x-handlebars-template" id="template-page2-loader">
+        <div id="page2-loader" class="row"><div class="large-12 columns"></div></div>
+    </script>
+</div>
