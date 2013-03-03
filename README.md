@@ -1,7 +1,7 @@
 js-samples
 ==========
 
-js-samples is a group of simple examples to show how I implement some javascript libraries, and how I optimized them for a production context.
+js-samples is a group of simple examples to show how I implement some javascript libraries, and how I optimize them for a production context.
 
 * [Available samples](#available-samples)
 * [Next samples](#next-samples)
