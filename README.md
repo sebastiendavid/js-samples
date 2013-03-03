@@ -81,6 +81,8 @@ http://localhost:5000/
 
 ## 3rd party libraries
 
+___Thanks to those great libraries:___
+
 * [Angular](http://angularjs.org/)
 * [Backbone](http://backbonejs.org/)
 * [CanJS](http://canjs.us/)
