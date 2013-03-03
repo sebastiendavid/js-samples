@@ -3,13 +3,13 @@ js-samples
 
 js-samples is a group of simple examples to show how I implement some javascript libraries, and how I optimized them for a production context.
 
-* [Available samples](#available--samples)
-* [Next samples](#next--samples)
+* [Available samples](#available-samples)
+* [Next samples](#next-samples)
 * [Requirements](#requirements)
-* [Start the nodejs server](#start--the--nodejs--server)
-* [Optimize the samples](#optimize--the--samples)
-* [Display the samples in a web browser](#display--the--samples--in--a--web--browser)
-* [3rd party libraries](#3rd--party--libraries)
+* [Start the NodeJS server](#start-the-nodejs-server)
+* [Optimize the samples](#optimize-the-samples)
+* [Display the samples in a web browser](#display-the-samples-in-a-web-browser)
+* [3rd party libraries](#3rd-party-libraries)
 
 ### Available samples
 
@@ -26,7 +26,7 @@ ___Work in progress...___
 
 * [NodeJS](http://nodejs.org)
 
-## Start the nodejs server
+## Start the NodeJS server
 
 __Context: in the js-samples folder with a terminal__
 
@@ -65,7 +65,7 @@ node minify-backbonejs-app.js
 
 ## Display the samples in a web browser
 
-The nodejs server is configured to listen the port 5000
+The NodeJS server is configured to listen the port 5000
 
 __Context: in a modern web browser please...__
 
