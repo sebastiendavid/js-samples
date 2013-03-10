@@ -71,12 +71,19 @@ __Context: in a modern web browser please...__
 
 For dev mode:
 ```
-http://localhost:5000/dev/
+http://localhost:5000/dev/?app=backbonejs
+http://localhost:5000/dev/?app=canjs
 ```
 
 For optimized mode:
 ```
-http://localhost:5000/
+http://localhost:5000/?app=backbonejs
+http://localhost:5000/?app=canjs
+```
+
+For logs add log=true, for example:
+```
+http://localhost:5000/dev/?app=backbonejs&log=true
 ```
 
 ## 3rd party libraries
