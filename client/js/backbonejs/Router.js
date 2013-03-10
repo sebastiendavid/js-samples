@@ -1,8 +1,8 @@
 /**
- * @license JS samples 1.0 - 2013 - Sebastien David
+ * JS samples 1.0 - 2013 - Sebastien David
  * https://github.com/sebastiendavid
  */
-define(["backbonejs-mainView", "backbonejs-page1aView", "backbonejs-page2aView", "custom-modernizr", "foundation", "foundation-topbar"], 
+define(["backbonejs-mainView", "backbonejs-page1aView", "backbonejs-page2aView", "underscore", "backbone"], 
     function(MainView, Page1, Page2) {
         return Backbone.Router.extend({
             "routes": {
@@ -11,7 +11,7 @@ define(["backbonejs-mainView", "backbonejs-page1aView", "backbonejs-page2aView",
                 "*path": "goToDefault"
             },
             "initialize": function(globals) {
-                console.log('init router');
+                log('init router');
                 this.globals = globals ? globals : {};
                 new MainView(this.globals).render();
                 this.$loader = $(document.getElementById("loader"));
@@ -19,7 +19,7 @@ define(["backbonejs-mainView", "backbonejs-page1aView", "backbonejs-page2aView",
                 Backbone.history.start();
             },
             "goToPage1": function() {
-                console.log("go to page1");
+                log("go to page1");
                 this.clear();
                 this.page1 = new Page1(this.globals);
                 this.page1.render();
@@ -30,7 +30,7 @@ define(["backbonejs-mainView", "backbonejs-page1aView", "backbonejs-page2aView",
                 this.removeLoader();
             },
             "goToPage2": function() {
-                console.log("go to page2");
+                log("go to page2");
                 this.clear();
                 this.page2 = new Page2(this.globals);
                 this.page2.render();

@@ -17,7 +17,7 @@ define(["text!html/page2.html", "backbonejs-articles"], function(html, Articles)
                     that.removeLoader();
                 },
                 "error": function(collection, xhr, options) {
-                    console.log("getArticles failed");
+                    log("getArticles failed");
                     that.removeLoader();
                 }
             });

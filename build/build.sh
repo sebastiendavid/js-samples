@@ -31,4 +31,5 @@ echo ""
 echo "JS optimization:"
 node minify-main-app.js
 node minify-backbonejs-app.js
+node minify-canjs-app.js
 echo ""

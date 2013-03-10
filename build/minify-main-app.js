@@ -4,10 +4,10 @@ conf = {
     "baseUrl": "../client",
     "name": "main",
     "out": "../out/js/js-samples.min.js",
-    "include": ["requirejs", "jquery", "moment", "underscore", "backbone", "handlebars", "less"],
-    "exclude": ["backbonejs-router"],
+    "include": ["requireLib", "jquery", "moment", "handlebars", "less", "custom-modernizr", "foundation", "foundation-topbar"],
+    "exclude": ["backbonejs-router", "canjs-router"],
     "paths": {
-        "requirejs": "js/lib/require-2.1.4",
+        "requireLib": "js/lib/require-2.1.5",
         "jquery": "js/lib/jquery-1.9.1",
         "moment": "js/lib/moment-2.0.0",
         "underscore": "js/lib/underscore-1.4.4",
@@ -18,6 +18,7 @@ conf = {
         "foundation": "js/lib/foundation",
         "foundation-topbar": "js/lib/foundation.topbar",
         "custom-modernizr": "js/lib/custom.modernizr",
+        "canjs": "js/lib/can.custom",
 
         "main": "js/main",
 
@@ -27,15 +28,24 @@ conf = {
         "backbonejs-page1bView": "js/backbonejs/view/Page1bView",
         "backbonejs-page2aView": "js/backbonejs/view/Page2aView",
         "backbonejs-articles": "js/backbonejs/model/Articles",
-        "backbonejs-article": "js/backbonejs/model/Article"
+        "backbonejs-article": "js/backbonejs/model/Article",
+
+        "canjs-router": "js/canjs/Router",
+        "canjs-mainView": "js/canjs/view/MainView",
+        "canjs-page1aView": "js/canjs/view/Page1aView",
+        "canjs-page1bView": "js/canjs/view/Page1bView",
+        "canjs-page2aView": "js/canjs/view/Page2aView",
+        "canjs-articles": "js/canjs/model/Articles",
+        "canjs-article": "js/canjs/model/Article"
     },
     "shim": {
-        "jquery": {"deps": ["require"]},
-        "moment": {"deps": ["require"]},
-        "less": {"deps": ["require"]},
-        "backbone": {"deps": ["underscore", "jquery"], "exports": "Backbone"},
-        "handlebars": {"deps": ["require"], "exports": "Handlebars"},
-        "underscore": {"deps": ["require"], "exports": "_"}
+        "jquery": {"deps": ["requireLib"]},
+        "moment": {"deps": ["requireLib"]},
+        "less": {"deps": ["requireLib"]},
+        "handlebars": {"deps": ["requireLib"]},
+        "custom-modernizr": {"deps": ["jquery"]},
+        "foundation": {"deps": ["custom-modernizr"]},
+        "foundation-topbar": {"deps": ["foundation"]},
     },
     "inlineText": true,
     "skipModuleInsertion": false,
@@ -46,6 +56,7 @@ conf = {
     },
     "findNestedDependencies": true,
     "optimizeAllPluginResources": true,
+    "preserveLicenseComments": false,
     "logLevel": 0
 };
 

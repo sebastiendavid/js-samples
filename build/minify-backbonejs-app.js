@@ -4,12 +4,11 @@ conf = {
     "baseUrl": "../client",
     "name": "backbonejs-router",
     "out": "../out/js/backbonejs-sample.min.js",
-    "include": ["custom-modernizr", "foundation", "foundation-topbar", "backbonejs-mainView", "backbonejs-page1aView", "backbonejs-page2aView"],
+    "include": ["underscore", "backbone", "backbonejs-mainView", "backbonejs-page1aView", "backbonejs-page2aView"],
     "paths": {
         "text": "js/lib/require-text-2.0.5",
-        "foundation": "js/lib/foundation",
-        "foundation-topbar": "js/lib/foundation.topbar",
-        "custom-modernizr": "js/lib/custom.modernizr",
+        "underscore": "js/lib/underscore-1.4.4",
+        "backbone": "js/lib/backbone-0.9.10",
 
         "backbonejs-router": "js/backbonejs/Router",
         "backbonejs-mainView": "js/backbonejs/view/MainView",
@@ -20,8 +19,10 @@ conf = {
         "backbonejs-article": "js/backbonejs/model/Article"
     },
     "shim": {
-        "foundation": {"deps": ["custom-modernizr"]},
-        "foundation-topbar": {"deps": ["foundation"]}
+        "backbone": {"deps": ["underscore"]},
+        "backbonejs-mainView": {"deps": ["backbone"]},
+        "backbonejs-page1aView": {"deps": ["backbone"]},
+        "backbonejs-page2aView": {"deps": ["backbone"]}
     },
     "stubModules": ["text"],
     "inlineText": true,
@@ -33,6 +34,7 @@ conf = {
     },
     "findNestedDependencies": true,
     "optimizeAllPluginResources": true,
+    "preserveLicenseComments": false,
     "logLevel": 0
 };
 
