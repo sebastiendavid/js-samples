@@ -81,7 +81,7 @@ http://localhost:5000/?app=backbonejs
 http://localhost:5000/?app=canjs
 ```
 
-For logs add log=true, for example:
+For logs add __log=true__, for example:
 ```
 http://localhost:5000/dev/?app=backbonejs&log=true
 ```
