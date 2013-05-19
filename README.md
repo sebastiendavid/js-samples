@@ -1,7 +1,7 @@
 js-samples
 ==========
 
->___DEPRECATED, now I prefer this developement environement with NodeJS and AngularJS: https://github.com/sebastiendavid/ui-project-template#ui-project-template___
+>___DEPRECATED, now I prefer this developement environement with NodeJS and AngularJS: https://github.com/sebastiendavid/ui-project-template#ui-project-sample___
 
 js-samples is a group of simple examples to show how I implement some javascript libraries, and how I optimize them for a production context.
 
